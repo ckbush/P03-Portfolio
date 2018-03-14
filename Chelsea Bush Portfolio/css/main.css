@@ -569,6 +569,15 @@ header {
 	padding-bottom: 3em;
 }
 
+#header-img{
+	padding-left: 6em;
+	padding-right: 6em;
+	padding-top: 0;
+	padding-bottom: 1em;
+	margin: 0;
+	height: 300px;
+}
+
 .project-title h2{
 	text-align: center;
 }
@@ -578,6 +587,10 @@ header {
 
 .row2{
 	text-align: right;
+}
+
+.row2-project2{
+	text-align: left;
 }
 
 .row3{
@@ -593,6 +606,12 @@ header {
 .content-img{
 padding-top: 2em;
 padding-bottom: 2em;
+}
+
+.large-img{
+padding-top: 1em;
+padding-bottom: 0em;
+position: relative;
 }
 
 .content-image-container {
