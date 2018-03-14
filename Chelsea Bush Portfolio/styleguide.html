@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <title>Chelsea Bush Styleguide</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/grids.css">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="grid-row">
+    <div class="grid-col-1of4">
+      <nav class="styleguide-side-nav">
+        <img src="img/styleguide.png" id="styleguide-title" alt="styleguide title">
+        <ul>
+          <li><a href="#nav">Navigation</a></li>
+          <li><a href="#links">Links</a></li>
+          <li><a href="#headings">Headings</a></li>
+          <li><a href="#paragraphs">Paragraphs</a></li>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#colours">Colours</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#grids">Grids</a></li>
+        </ul>
+
+      </nav>
+    </div>
+
+    <div class="grid-col-3of4">
+
+      <section id="intro">
+
+        <header>
+          <div class="header">
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html#intro">Home</a></li>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#about">About</a></li>
+            </ul>
+          </nav>
+
+        </header>
+
+      </section>
+
+
+      <!-- nav button -->
+      <section id="nav">
+
+
+        <h2>Navigation</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.main-nav</p>
+
+        <h3>Sample code:</h3>
+
+        <code>
+          &lt;ul&gt;
+          <br>
+          &lt;li&gt;&lt;a href="#" class="main-nav"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          <br>
+          &lt;li&gt;&lt;a href="#" class="main-nav"&gt;Work&lt;/a&gt;&lt;/li&gt;
+          <br>
+          &lt;li&gt;&lt;a href="#" class="main-nav"&gt;About&lt;/a&gt;&lt;/li&gt;
+          <br>
+          &lt;/ul&gt;
+        </code>
+
+        <h3>Rendered elements:</h3>
+        <nav class="styleguide-main-nav">
+          <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+
+      </section>
+
+      <!-- in-text link -->
+      <section id="links">
+
+        <h2>In-text link</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.in-text-link</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="in-text-link"&gt;learn more&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="in-text-link" href="#">learn more</a>
+
+      </section>
+
+
+      <section id="headings">
+
+        <h2>Headings</h2>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;h1&gt;Heading 1&lt;/h1&gt;
+          <br>&lt;h2&gt;Heading 2&lt;/h2&gt;
+          <br>&lt;h3&gt;Heading 3&lt;/h3&gt;
+        </code>
+
+        <h2>Rendered element:</h2>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+
+      </section>
+
+      <section id="paragraphs">
+
+        <h2>Paragraphs</h2>
+
+        <h3>Sample code:</h3>
+        <code>&lt;p&gt;I’m Chelsea, a visual designer based in Vancouver, BC. Currently, I’m a third year design student in the School of Interactive Arts and Technology at Simon Fraser University.&lt;/p&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <p class="paragraph-text">I’m Chelsea, a visual designer based in Vancouver, BC. Currently, I’m a third year design student in the School of Interactive Arts and Technology at Simon Fraser University.</p>
+
+      </section>
+
+      <section id="lists">
+
+        <h2>Lists</h2>
+
+        <h3>CSS selector:</h3>
+        <p>ul, li</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;ul&gt;
+          <br>
+          &lt;li&gt;Research&lt;/li&gt;
+          <br>
+          &lt;li&gt;Prototyping&lt;/li&gt;
+          <br>
+          &lt;li&gt;Testing&lt;/li&gt;
+          <br>
+          &lt;/ul&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+        <ul>
+          <li>Research</li>
+          <li>Prototyping</li>
+          <li>Testing</li>
+        </ul>
+
+
+      </section>
+
+
+
+      <section id="colours">
+
+        <h2>Colour Palette</h2>
+        <div class="colour-palette2">
+        <h3>#FFFFFF</h3>
+        </div>
+        <div class="colour-palette1">
+        <h3>#000000</h3>
+        </div>
+        <div class="colour-palette3">
+        <h3>#F05152</h3>
+        </div>
+
+      </section>
+
+      <section id="images">
+
+        <h2>Sample Image Treatment</h2>
+
+        <div class="work-image-container">
+          <img src="img/journey-work.jpg" alt="journey app">
+          <img src="img/journey-work2.jpg" id="image2" alt="journey app">
+        </div>
+      </section>
+
+      <section id="grids">
+        <h2>Grids</h2>
+
+        <div class="sample-grids">
+          <div class="grid-row">
+            <div class="grid-col-1of1">
+              <p class="grid-structure">1 of 1</p>
+            </div>
+          </div>
+
+          <div class="grid-row">
+            <div class="grid-col-1of2">
+              <p class="grid-structure">1 of 2</p>
+            </div>
+            <div class="grid-col-1of2">
+              <p class="grid-structure">2 of 2</p>
+            </div>
+          </div>
+
+          <div class="grid-row">
+            <div class="grid-col-1of3">
+              <p class="grid-structure">1 of 3</p>
+            </div>
+            <div class="grid-col-1of3">
+              <p class="grid-structure">2 of 3</p>
+            </div>
+            <div class="grid-col-1of3">
+              <p class="grid-structure">3 of 3</p>
+            </div>
+          </div>
+
+          <div class="grid-row">
+            <div class="grid-col-1of4">
+              <p class="grid-structure">1 of 4</p>
+            </div>
+            <div class="grid-col-1of4">
+              <p class="grid-structure">2 of 4</p>
+            </div>
+            <div class="grid-col-1of4">
+              <p class="grid-structure">3 of 4</p>
+            </div>
+            <div class="grid-col-1of4">
+              <p class="grid-structure">4 of 4</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+    </div>
+
+  </body>
+
+  </html>
