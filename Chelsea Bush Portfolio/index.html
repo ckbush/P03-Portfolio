@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/grids.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
 </head>
 
 <body>
@@ -19,12 +20,11 @@
 		<header>
 			<div class="header">
 			</div>
-			<!--<a href="#intro"  class="logo"><img src="img/logo.png" alt="name logo"></a>-->
+			<a href="#intro"  class="logo"><img src="img/logo-01.png" alt="name logo"></a>
 			<nav class="main-nav">
 				<ul>
-					<li><a href="#intro">Home</a></li>
 					<li><a href="#work">Work</a></li>
-					<li><a href="#about">About</a></li>
+					<li><a href="about.html">About</a></li>
 				</ul>
 			</nav>
 
@@ -33,22 +33,20 @@
 
 
 		<div class="intro-section">
-			<div class="box-container">
-				<div class="background-box">
-					<img src="img/placeholder.jpg" alt="Picture of ?">
-				</div>
-				<div class="bottom-info">
-					<p>Hello, I'm Chelsea, A Visual Designer from Vancouver, BC.</p>
-				</div>
-				<div class="contentDiv">
-					<img class="arrow" src="img/arrow.png" alt="down arrow">
-				</div>
-			</div>
-			<div class="intro-img">
-				<img src="img/name2.png" alt="my name">
-			</div>
 
-		</div>
+			<div class="intro-name">
+				<!--<img src="img/name.png" alt="my name">-->
+				<h2>Chelsea Bush</h2>
+			</div>
+			</div>
+			<div class="bottom-info">
+				<p>Hello, I'm Chelsea, a visual and user experience designer based in Vancouver, BC.</p>
+			</div>
+			<div class="contentDiv">
+				<a href="#work">
+				<img class="arrow" src="img/arrow.png" alt="down arrow">
+				<a>
+			</div>
 
 	</section>
 
@@ -60,77 +58,50 @@
 			<p>My Recent Work<p>
 		</div>-->
 
-
-		<div class="grid-row">
-			<div class="grid-col-1of2">
-				<div class="grid-row">
-					<div class="grid-col-1of1">
-						<div class="work-1">
-							<a href="conscious-culture.html">
-
-								<div class="work-image-container">
-									<img src="img/placeholder.jpg" alt="placeholder">
-								</div>
-							</a>
-							<div class="work-title">
-								<a href="conscious-culture.html">Conscious Culture</a>
-								<p>Front-End Development and Design</p>
-							</div>
-						</div>
-					</div>
+		<div class="work-1">
+			<a href="conscious-culture.html">
+				<div class="work-image-container" id="work1">
+					<img src="img/cc-work.jpg" alt="placeholder">
+					<img src="img/cc-work2.jpg" id="image2" alt="placeholder">
 				</div>
-			</div>
-			<div class="grid-col-1of2">
-				<div class="grid-row">
-					<div class="grid-col-1of1">
-						<div class="work-2">
-							<a href="journey.html">
-								<div class="work-image-container">
-									<img src="img/placeholder.jpg" alt="placeholder">
-									<!--<img src="img/journey-work2.jpg" id="image2" alt="placeholder">-->
-									<!--<video width="300" height="300" Autoplay=autoplay muted loop>
-									<source src="vid/Untitled.mp4" type="video/mp4">-->
-								</div>
-							</a>
-							<div class="work-title">
-								<a href="journey.html">Journey</a>
-								<p>UX, UI</p>
-							</div>
-						</div>
-					</div>
-				</div>
+			</a>
+			<div class="work-title">
+				<a href="conscious-culture.html">Conscious Culture</a>
+				<p>Website Design and Development</p>
 			</div>
 		</div>
+
+			<div class="work-2">
+				<a href="journey.html">
+					<div class="work-image-container" id="work2">
+						<img src="img/journey-work.jpg" alt="placeholder">
+						<img src="img/journey-work2.jpg" id="image2" alt="placeholder">
+						</div>
+						</a>
+					<div class="work-title">
+						<a href="journey.html">Journey</a>
+						<p>Mobile Application Design</p>
+					</div>
+				</div>
+
+
+
+			</div>
+</section>
+
+<section id="view-more-home">
+	<div class="view-more-section">
+		<a href="about.html"><h2>About Me</h2></a>
 	</div>
 </section>
 
 
-<section id="about">
-	<div class="about-section">
-		<div class="about-image-container">
-			<div class="about-title">
-				<h2>About Me<h2>
-				</div>
-				<div class="about-img">
-					<img src="img/placeholder.jpg" alt="placeholder">
-				</div>
-			</div>
-			<p>
-				I’m Chelsea, a visual designer based in Vancouver, BC. Currently, I’m a third year design student in the School of Interactive Arts and Technology at Simon Fraser University. For me, design acts as my creative outlet, as well as an opportunity to share meaningful and engaging experiences with others. Through my work, I strive to bring a unique perspective to every new design challenge.
-			</p>
-			<p>
-				Despite spending most of my days at the computer, I am also very passionate about getting back to nature. When I’m not designing, I can typically be found hiking or snowboarding somewhere within the beautiful landscape of BC.
-			</p>
-		</div>
-	</section>
-
 	<section id="contact">
 		<footer>
 			<div class="global-footer">
-				<h2>Say Hello</h2>
+
 				<div class="contact-info">
-					<p> ckbush@sfu.ca</p>
-					<p> 778-938-0230</p>
+					<p> coded by chelsea bush, 2018</p>
 				</div>
 				<div class="project-info">
 					<a href="styleguide.html" id="project-link1" class="in-text-link">styleguide</a>
@@ -138,7 +109,7 @@
 					<a href="citations.html" id="project-link3" class="in-text-link">git</a>
 				</div>
 			</div>
-	</footer>
+		</footer>
 	</section>
 	<script src="js/jquery.js"></script>
 	<script src="js/scroll.js"></script>

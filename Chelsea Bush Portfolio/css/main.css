@@ -1,20 +1,10 @@
 /*General*/
 
-@font-face {
-	font-family: "Akzidenz Grotesk";
-	src: url("../font/AkzidenzGrotesk-LightCondItalic.otf") format("opentype");
-}
-
-@font-face {
-	font-family: "Akzidenz Light";
-	src: url("../font/AkzidenzGrotesk-Light.otf") format("opentype");
-}
-
 body{
 	font-family: 'Inconsolata', monospace;
 	font-size: 1em;
 	letter-spacing: 0.02em;
-	background-color: white;
+	background-color: #fff;
 }
 
 html {
@@ -40,17 +30,19 @@ h2{
 	font-family: 'Inconsolata', monospace;
 	font-size: 1.2em;
 	font-weight: 700;
-	letter-spacing: 0.09em;
+	letter-spacing: 0.1em;
 	text-transform: uppercase;
+	letter-spacing: 0.2em;
 }
 
 h3{
 	font-family: 'Inconsolata', monospace;
 	font-size: 1em;
 	font-weight: 700;
-	letter-spacing: 0.09em;
+	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	opacity: 0.85;
+
 }
 
 p{
@@ -59,6 +51,9 @@ p{
 	opacity:0.8;
 }
 
+a{
+	text-decoration: none;
+}
 
 
 ul {
@@ -82,9 +77,10 @@ section {
 	padding-bottom: 2em;
 }
 
-.header-vid video {
-	opacity: 0.7;
+video{
+
 }
+
 /*Styleguide*/
 
 #styleguide-title{
@@ -116,7 +112,9 @@ section {
 }
 
 .styleguide-side-nav {
-	position: fixed;
+	position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 	padding-left: 5em;
 	z-index: 3;
 	top: 50vh;
@@ -183,7 +181,7 @@ section {
 }
 
 .in-text-link:hover {
-	text-decoration: underline;
+	opacity: 0.5;
 }
 
 .submit-button {
@@ -261,7 +259,7 @@ header {
 	top: 1em;
 	left:1em;
 	z-index: 15;
-	width:100px;
+	width:60px;
 	opacity: 0.65;
 
 }
@@ -313,18 +311,12 @@ header {
 	display: block;
 	height: 35px;
 	width: 40px;
-	left: 45.5%;
+	left: 49%;
 	padding: 0;
-	margin-bottom: -12em;
+	margin-bottom: 9em;
 	position: absolute;
 }
 
-.intro-section h1 {
-	margin: 1.3em;
-	width: 90%;
-	font-weight: 400;
-
-}
 
 .box-container {
 	position: fixed;
@@ -337,11 +329,14 @@ header {
 
 .bottom-info{
 	position: absolute;
-	bottom: -125px;
-	padding-left: 6em;
-	padding-right: 6em;
-	width: 100%;
+	top: 55vh;
 	text-align: center;
+	height: auto;
+	width: 330px;
+	transform: translate(-50%, -50%);
+	left: 50vw;
+	overflow: hidden;
+	object-fit: cover;
 }
 
 .background-box {
@@ -361,18 +356,38 @@ header {
 
 .intro-section {
 	position: relative;
+	width: 400px;
 	height: 100vh;
 }
 
-.intro-img {
+.intro-name h2{
 	height: auto;
-	width: 250px;
+	width: 380px;
 	position: absolute;
 	transform: translate(-50%, -50%);
-	top: 42vh;
+	top: 37vh;
 	left: 50vw;
 	overflow: hidden;
 	object-fit: cover;
+	opacity: 0.8;
+	text-align: center;
+	letter-spacing: 0.4em;
+	/*font-family: 'Lora';*/
+
+
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .4em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
 
@@ -384,32 +399,31 @@ header {
 	}
 
 	.intro-img {
-		width: 250px;
+		width: 180px;
 	}
 }
 
 /*Work*/
 
-
-.work-section {
-	background-color: white;
-	padding-left: 7em;
-	padding-right: 7em;
-	width: 90%;
-	max-width: 1200px;
-
-}
-
 .work-image-container{
-	width: 100%;
 	overflow: hidden;
 	position: relative;
+	transform: translate(-50%, -20%);
+	left: 50%;
 }
 
 
-.work-1, .work-2 {
+.work-1{
 	padding-top: 2em;
+	padding-bottom: 9em;
+	width: 100%;
+}
 
+
+.work-2 {
+	padding-top: 3em;
+	padding-bottom: 0em;
+	width: 100%;
 }
 
 .work-image-container img{
@@ -430,7 +444,6 @@ header {
 
 }
 
-
 #image2:hover {
 	opacity: 0;
 }
@@ -438,26 +451,30 @@ header {
 .work-title {
 	margin-top: 0.8em;
 	opacity: 1;
+	transform: translate(0%, -50%);
+	overflow: hidden;
+	position: relative;
+	text-align: center;
 }
 
-.work-image-container .work-title:hover {
+.work-title:hover {
 	margin-top: 0.8em;
-	opacity: 1;
+	opacity: 0.7;
 }
 
 .work-title a{
 	font-family: 'Inconsolata', monospace;
 	font-size: 1em;
 	font-weight: 700;
-	letter-spacing: 0.09em;
+	letter-spacing: 0.2em;
 	color: black;
 	text-transform: uppercase;
 	text-decoration: none;
-	float left: 50%;
-	opacity: 0.85;
+	text-align: center;
 }
 
 .work-title p{
+	padding-top: 1em;
 	margin: 0.5em 0 0 0;
 }
 
@@ -471,11 +488,15 @@ header {
 
 /*About*/
 
+#about-section {
+	padding-top: 0;
+}
+
+
 .about-section {
-	background-color: white;
 	padding-left: 15em;
 	padding-right: 15em;
-	padding-top: 6em;
+	padding-top: 0;
 
 }
 
@@ -485,7 +506,7 @@ header {
 	overflow: hidden;
 	position: relative;
 	padding-bottom: 3em;
-	margin-bottom: 3em;
+	margin-bottom: 6em;
 }
 
 .about-image-container img{
@@ -507,7 +528,22 @@ header {
 	text-align: center;
 }
 
-/*Project1 - Journey*/
+/*Project2 - Journey*/
+
+.project-image-container {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 0em;
+	padding-top: 0em;
+}
+
+.project-image-container img{
+
+
+
+}
 
 .project-img{
 	padding-left: 3em;
@@ -515,21 +551,28 @@ header {
 }
 
 .project-section {
-	background-color: white;
 	padding-left: 11em;
 	padding-right: 11em;
 	padding-top: 0em;
+	line-height: 2em;
 }
 
-#video-link {
+.project-section p{
+	line-height: 1.65;
+}
+
+#video-link h3{
 	font-weight: 300;
 	opacity: 0.9;
 	text-decoration: none;
-	color: #F05152;
+	color: black;
+	font-size: 0.8em;
+	letter-spacing: 0.3em;
 }
 
-#video-link:hover {
-	text-decoration: underline;
+#video-link h3:hover {
+	opacity: 0.5;
+	text-decoration: none;
 }
 
 .bottom-link {
@@ -537,16 +580,20 @@ header {
 	text-align: center;
 }
 
-#video-section {
-	padding-top: 4.5em;
-}
-
 #content-section {
 	padding-top: 2.5em;
 }
 
-.header-image-container {
+.image-section {
+	padding-left: 11em;
+	padding-right: 11em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	height: 100vh;
 	width: 100%;
+}
+
+.header-image-container {
 	overflow: hidden;
 	position: relative;
 	padding-bottom: 1em;
@@ -559,7 +606,7 @@ header {
 .header-image-container img{
 	position: relative;
 	width: 100%;
-	height: 380px;
+	height: 500px;
 	object-fit: cover;
 	display: inline-block;
 
@@ -569,14 +616,6 @@ header {
 	padding-bottom: 3em;
 }
 
-#header-img{
-	padding-left: 6em;
-	padding-right: 6em;
-	padding-top: 0;
-	padding-bottom: 1em;
-	margin: 0;
-	height: 300px;
-}
 
 .project-title h2{
 	text-align: center;
@@ -586,7 +625,7 @@ header {
 }
 
 .row2{
-	text-align: right;
+	text-align: center;
 }
 
 .row2-project2{
@@ -594,7 +633,7 @@ header {
 }
 
 .row3{
-	text-align: right;
+	text-align: center;
 }
 
 .content-headings h3{
@@ -624,15 +663,20 @@ position: relative;
 }
 
 
-.prototype-img{
-	width: 233px;
-	display: inline-block;
-	padding: 1em;
+.prototype-img video{
+	width: 100%;
+	height: 100%;
+}
+
+.promo-video video{
+	padding-left: 10em;
+	padding-right: 10em;
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
 }
 
 .prototype-stages {
-	padding-left: 5em;
-	padding-right: 5em;
 	padding-top: 2em;
 	text-align: center;
 }
@@ -642,6 +686,7 @@ position: relative;
 	line-height: 1.3;
 	opacity:0.8;
 	text-align: center;
+	padding-bottom: 0;
 }
 
 
@@ -662,9 +707,40 @@ position: relative;
 	padding-top: 0em;
 }
 
+/*project 1 - conscious culture*/
+
+.header-image-container{
+	position: absolute;
+	top: 55vh;
+	text-align: center;
+	height: auto;
+	transform: translate(-50%, -50%);
+	left: 50vw;
+	overflow: hidden;
+	object-fit: cover;
+	width: 100%;
+}
+
+#header-img{
+	padding-left: 0em;
+	padding-right: 0em;
+	padding-top: 0;
+	padding-bottom: 1em;
+	margin: 0;
+	margin-bottom: 2em;
+}
+
+
 
 
 /*Footer*/
+
+
+
+#contact{
+	padding-top: 2em;
+}
+
 footer {
 	position: absolute;
 	width: 100%;
@@ -678,7 +754,6 @@ footer {
 
 .global-footer {
 	border: none;
-	background-color: white;
 	border-top: 1.3px solid #dedede;
 	padding: 1em 1em;
 	color: black;
@@ -694,6 +769,7 @@ footer {
 
 .contact-info p{
 	font-weight: 500;
+	font-style: italic;
 }
 
 .copywrite-info p{
@@ -708,4 +784,25 @@ footer {
 	font-weight: 300;
 	opacity: 0.8;
 	color: #F05152;
+}
+
+/*view more*/
+
+#view-more-home {
+	padding-top: 0em;
+	padding-bottom: 1em;
+}
+
+.view-more-section h2{
+	text-align: center;
+	opacity: 0.1;
+	font-size: 1.5em;
+	color: black;
+	text-decoration: none;
+
+}
+
+.view-more-section h2:hover, .view-more-section h2:focus, .view-more-section h2:active {
+	opacity: 0.2;
+	text-decoration: none;
 }
