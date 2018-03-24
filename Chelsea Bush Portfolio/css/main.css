@@ -22,26 +22,28 @@ figure {
 }
 
 h1{
-	font-family: 'Inconsolata', monospace;
-	font-size: 1.7em;
+	font-family: 'Lora', monospace;
+	font-size: 1.5em;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: lowercase;
 }
 
 h2{
-	font-family: 'Inconsolata', monospace;
+	font-family: 'Lora', monospace;
 	font-size: 1.2em;
 	font-weight: 700;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
+	text-transform: lowercase;
 	letter-spacing: 0.2em;
 }
 
 h3{
-	font-family: 'Inconsolata', monospace;
-	font-size: 1em;
+	font-family: 'lora', monospace;
+	font-size: 0.95em;
 	font-weight: 700;
 	letter-spacing: 0.2em;
-	text-transform: uppercase;
-	opacity: 0.85;
+	text-transform: lowercase;
+	opacity: 0.8;
 
 }
 
@@ -57,12 +59,14 @@ a{
 
 
 ul {
+	font-family: 'Inconsolata', monospace;
 	list-style: none;
 	padding-left: 0;
 
 }
 
 li {
+	font-family: 'Inconsolata', monospace;
 	line-height: 2em;
 }
 
@@ -134,8 +138,9 @@ video{
 }
 
 .styleguide-side-nav a:hover, .styleguide-side-nav a:focus, .styleguide-side-nav a:active {
-	text-decoration: none;;
-	opacity: 0.4;
+	text-decoration: none;
+	opacity: 0.6;
+	color: #ff4633;
 }
 
 .styleguide-side-nav li{
@@ -164,24 +169,32 @@ video{
 .styleguide-main-nav a{
 	color: #000000;
 	text-decoration: none;
-	font-size: 0.9em;
+	font-size: 0.95em;
 	opacity: 0.8;
 }
 
 .styleguide-main-nav a:hover {
 	text-decoration: none;;
-	opacity: 0.4;
+	opacity: 0.7;
+	color: #ff4633;
 }
 
 .in-text-link {
-	font-weight: 300;
-	opacity: 0.9;
+	text-align: center;
+	opacity: 0.2;
+	font-size: 1.2em;
+	font-family: 'Lora', serif;
+	font-weight: 700;
+	letter-spacing: 0.2;
+	text-transform: lowercase;
+	color: black;
 	text-decoration: none;
-	color: #F05152;
 }
 
 .in-text-link:hover {
-	opacity: 0.5;
+	opacity: 0.35;
+	color: #ff4633;
+	text-decoration: none;
 }
 
 .submit-button {
@@ -215,7 +228,7 @@ video{
 	width: 100px;
 	height: 100px;
 	background-color: #FFFFFF;
-	border: 1px solid black;
+	border: 1px solid grey;
 	color: black;
 	text-align: center;
 	display: inline-block;
@@ -224,12 +237,33 @@ video{
 .colour-palette3{
 	width: 100px;
 	height: 100px;
-	background-color: #F05152;
+	background-color: #d6d6d6;
 	color: black;
 	text-align: center;
 	display: inline-block;
 }
 
+.colour-palette4{
+	width: 100px;
+	height: 100px;
+	background-color: #ff4633;
+	color: black;
+	text-align: center;
+	display: inline-block;
+}
+
+.styleguide-image-container {
+	overflow: hidden;
+	position: relative;
+
+}
+
+.styleguide-image-container img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: inline-block;
+	}
 
 /*Intro*/
 
@@ -260,9 +294,15 @@ header {
 	left:1em;
 	z-index: 15;
 	width:60px;
-	opacity: 0.65;
+	opacity: 0.7;
 
 }
+
+.logo:hover {
+	opacity: 0.4;
+
+}
+
 
 .main-nav {
 	position: fixed;
@@ -286,16 +326,18 @@ header {
 	color: #000000;
 	text-decoration: none;
 	font-size: 0.9em;
-	opacity: 0.8;
+	opacity: 0.7;
 }
 
 .main-nav a:hover {
-	text-decoration: none;;
-	opacity: 0.4;
+	text-decoration: none;
+	color: #ff4633;
+	opacity: 0.7;
 }
 
 #intro{
 	position: relative;
+	/*background-color: #f94e3d;*/
 }
 
 
@@ -326,10 +368,24 @@ header {
 	left: 50vw;
 }
 
+/*.middle-line{
+	position: absolute;
+	top: 37vh;
+	padding-top: 165px;
+	text-align: center;
+	height: auto;
+	border-bottom: 1px solid black;
+	width: 70px;
+	transform: translate(-50%, -50%);
+	left: 50vw;
+	overflow: hidden;
+	object-fit: cover;
+}*/
 
 .bottom-info{
 	position: absolute;
-	top: 55vh;
+	top: 39vh;
+	padding-top: 235px;
 	text-align: center;
 	height: auto;
 	width: 330px;
@@ -355,6 +411,7 @@ header {
 }
 
 .intro-section {
+
 	position: relative;
 	width: 400px;
 	height: 100vh;
@@ -362,46 +419,46 @@ header {
 
 .intro-name h2{
 	height: auto;
-	width: 380px;
+	width: 700px;
 	position: absolute;
 	transform: translate(-50%, -50%);
-	top: 37vh;
+	top: 36vh;
 	left: 50vw;
 	overflow: hidden;
 	object-fit: cover;
-	opacity: 0.8;
+	opacity: 1;
 	text-align: center;
-	letter-spacing: 0.4em;
-	/*font-family: 'Lora';*/
+	letter-spacing: 0.5em;
+	color: #f7c800;
+	color: #ff4633;
+	color: black;
+	opacity: 0.9;
+	text-transform: lowercase;
+
+
+	font-size: 3.35em;
+
+
+	/*-webkit-text-stroke: 1px black;*/
+
+	font-family: 'Lora', serif;
 
 
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .4em; /* Adjust as needed */
+  letter-spacing: .2em; /* Adjust as needed */
   animation:
-    typing 3.5s steps(40, end),
+    typing 2.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 110% }
 }
 
-
-@media (max-width: 40em){
-	.intro-section h1 {
-		margin: 1em 0.5em;
-		font-size: 2em;
-		width: 100%;
-	}
-
-	.intro-img {
-		width: 180px;
-	}
-}
 
 /*Work*/
 
@@ -422,6 +479,12 @@ header {
 
 .work-2 {
 	padding-top: 3em;
+	padding-bottom: 9em;
+	width: 100%;
+}
+
+.work-3 {
+	padding-top: 3em;
 	padding-bottom: 0em;
 	width: 100%;
 }
@@ -432,10 +495,10 @@ header {
 	height: 100%;
 	object-fit: cover;
 	opacity: 1;
-	-webkit-transition: opacity 0.2s ease-out;
-	-moz-transition: opacity 0.2s ease-out;
-	-o-transition: opacity 0.2s ease-out;
-	transition: opacity 0.2s ease-out;
+	/-webkit-transition: opacity 0.1s ease-out;
+	-moz-transition: opacity 0.1s ease-out;
+	-o-transition: opacity 0.1s ease-out;
+	transition: opacity 0.1s ease-out;
 	display: inline-block;
 }
 
@@ -463,14 +526,15 @@ header {
 }
 
 .work-title a{
-	font-family: 'Inconsolata', monospace;
+	font-family: 'lora', monospace;
 	font-size: 1em;
 	font-weight: 700;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.3em;
 	color: black;
-	text-transform: uppercase;
+	text-transform: lowercase;
 	text-decoration: none;
 	text-align: center;
+	/*color:#ff4633;*/
 }
 
 .work-title p{
@@ -497,7 +561,6 @@ header {
 	padding-left: 15em;
 	padding-right: 15em;
 	padding-top: 0;
-
 }
 
 .about-image-container {
@@ -519,8 +582,7 @@ header {
 }
 
 .about-img{
-	padding-bottom: 3em;
-	margin-bottom: 3em;
+
 }
 
 .about-title h2{
@@ -551,8 +613,6 @@ header {
 }
 
 .project-section {
-	padding-left: 11em;
-	padding-right: 11em;
 	padding-top: 0em;
 	line-height: 2em;
 }
@@ -618,7 +678,11 @@ header {
 
 
 .project-title h2{
+	font-family: 'lora';
+	font-size: 1.2em;
 	text-align: center;
+	font-weight: 700;
+	letter-spacing: 0.3em;
 }
 
 .row1{
@@ -687,6 +751,8 @@ position: relative;
 	opacity:0.8;
 	text-align: center;
 	padding-bottom: 0;
+	/*padding-left: 20em;
+	padding-right: 20em;*/
 }
 
 
@@ -721,7 +787,7 @@ position: relative;
 	width: 100%;
 }
 
-#header-img{
+#header-img, #intro-img, #about-img{
 	padding-left: 0em;
 	padding-right: 0em;
 	padding-top: 0;
@@ -755,16 +821,15 @@ footer {
 .global-footer {
 	border: none;
 	border-top: 1.3px solid #dedede;
-	padding: 1em 1em;
 	color: black;
 	position: relative;
 	width: 100%;
 	left:0;
 	text-align: center;
-	padding-bottom: 4em;
+	padding-bottom: 2em;
 	padding-left: 4em;
 	padding-right: 4em;
-	padding-top: 3em;
+	padding-top: 1.5em;
 }
 
 .contact-info p{
@@ -782,8 +847,8 @@ footer {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	font-weight: 300;
-	opacity: 0.8;
-	color: #F05152;
+	opacity: 0.3;
+	color: black;
 }
 
 /*view more*/
@@ -796,13 +861,16 @@ footer {
 .view-more-section h2{
 	text-align: center;
 	opacity: 0.1;
-	font-size: 1.5em;
+	font-size: 1.4em;
+	font-family: 'Lora', 'Inconsolata';
+	text-transform: lowercase;
 	color: black;
 	text-decoration: none;
 
 }
 
 .view-more-section h2:hover, .view-more-section h2:focus, .view-more-section h2:active {
-	opacity: 0.2;
+	opacity: 0.35;
+	color: #ff4633;
 	text-decoration: none;
 }

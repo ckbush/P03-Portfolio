@@ -106,9 +106,18 @@ padding-right: 3em;
 	width: 65vw;
 }
 
+#about-img{
+	height: 43vw;
+	width: 43vw;
+}
+
 .project-section{
 	padding-left: 4em;
 	padding-right: 4em;
+}
+
+.intro-name h2{
+	font-size: 2em;
 }
 
 
@@ -167,15 +176,25 @@ padding-right: 3em;
 		width: 55vw;
 	}
 
+	#about-img{
+		height: 35vw;
+		width: 37vw;
+	}
+
 	.project-section{
 		padding-left: 7em;
 		padding-right: 7em;
+	}
+
+	.intro-name h2{
+		font-size: 2.75em;
 	}
 
 }
 
 
 @media (min-width: 50em){
+
 	.styleguide-nav {
 		position: fixed;
 		z-index: 3;
@@ -258,9 +277,8 @@ padding-right: 3em;
 	}
 
 	.styleguide-side-nav{
-
 		top: 50vh;
-		padding-left: 5em;
+		padding-left: 3em;
 	}
 
 	.header-image-container{
@@ -273,9 +291,19 @@ padding-right: 3em;
 		width: 55vw;
 	}
 
+	#about-img{
+		height: 32vw;
+		width: 37vw;
+	}
+
+
 	.project-section{
 		padding-left: 10em;
 		padding-right: 10em;
+	}
+
+	.intro-name h2{
+		font-size: 3em;
 	}
 
 }
@@ -327,9 +355,28 @@ padding-right: 10em;
 	width: 45vw;
 }
 
-.project-section{
-	padding-left: 13em;
-	padding-right: 13em;
+#about-img{
+	height: 26vw;
+	width: 30vw;
 }
 
+#intro-img{
+	height: 26vw;
+	width: 45vw;
+	opacity: 0.4;
+
+
+}
+.project-section{
+	padding-left: 14em;
+	padding-right: 14em;
+}
+
+.intro-name h2{
+	font-size: 3.15em;
+}
+
+.styleguide-side-nav{
+	top: 50vh;
+	padding-left: 5em;
 }

@@ -11,6 +11,7 @@
 
 
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
 </head>
 
 <body>
@@ -18,7 +19,6 @@
   <div class="grid-row">
     <div class="grid-col-1of4">
       <nav class="styleguide-side-nav">
-        <img src="img/styleguide.png" id="styleguide-title" alt="styleguide title">
         <ul>
           <li><a href="#nav">Navigation</a></li>
           <li><a href="#links">Links</a></li>
@@ -38,17 +38,17 @@
       <section id="intro">
 
         <header>
-          <div class="header">
-          </div>
-          <nav class="main-nav">
-            <ul>
-              <li><a href="index.html#intro">Home</a></li>
-              <li><a href="index.html#work">Work</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
-          </nav>
+    			<div class="header">
+    			</div>
+    			<a href="index.html#intro"  class="logo"><img src="img/logo-01.png" alt="name logo"></a>
+    			<nav class="main-nav">
+    				<ul>
+    					<li><a href="index.html#work">work</a></li>
+    					<li><a href="about.html">about</a></li>
+    				</ul>
+    			</nav>
 
-        </header>
+    		</header>
 
       </section>
 
@@ -67,11 +67,9 @@
         <code>
           &lt;ul&gt;
           <br>
-          &lt;li&gt;&lt;a href="#" class="main-nav"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#" class="main-nav"&gt;work&lt;/a&gt;&lt;/li&gt;
           <br>
-          &lt;li&gt;&lt;a href="#" class="main-nav"&gt;Work&lt;/a&gt;&lt;/li&gt;
-          <br>
-          &lt;li&gt;&lt;a href="#" class="main-nav"&gt;About&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#" class="main-nav"&gt;about&lt;/a&gt;&lt;/li&gt;
           <br>
           &lt;/ul&gt;
         </code>
@@ -79,9 +77,8 @@
         <h3>Rendered elements:</h3>
         <nav class="styleguide-main-nav">
           <ul>
-            <li><a href="#intro">Home</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#work">work</a></li>
+            <li><a href="#about">about</a></li>
           </ul>
         </nav>
 
@@ -110,15 +107,15 @@
 
         <h3>Sample code:</h3>
         <code>
-          &lt;h1&gt;Heading 1&lt;/h1&gt;
-          <br>&lt;h2&gt;Heading 2&lt;/h2&gt;
-          <br>&lt;h3&gt;Heading 3&lt;/h3&gt;
+          &lt;h1&gt;heading 1&lt;/h1&gt;
+          <br>&lt;h2&gt;heading 2&lt;/h2&gt;
+          <br>&lt;h3&gt;heading 3&lt;/h3&gt;
         </code>
 
-        <h2>Rendered element:</h2>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
+        <h3>Rendered element:</h3>
+        <h1>heading 1</h1>
+        <h2>heading 2</h2>
+        <h3>heading 3</h3>
 
       </section>
 
@@ -172,11 +169,14 @@
         <div class="colour-palette2">
         <h3>#FFFFFF</h3>
         </div>
+        <div class="colour-palette3">
+        <h3>#d6d6d6</h3>
+        </div>
         <div class="colour-palette1">
         <h3>#000000</h3>
         </div>
-        <div class="colour-palette3">
-        <h3>#F05152</h3>
+        <div class="colour-palette4">
+        <h3>#FF4633</h3>
         </div>
 
       </section>
@@ -185,9 +185,9 @@
 
         <h2>Sample Image Treatment</h2>
 
-        <div class="work-image-container">
+        <div class="styleguide-image-container">
           <img src="img/journey-work.jpg" alt="journey app">
-          <img src="img/journey-work2.jpg" id="image2" alt="journey app">
+          <!--<img src="img/journey-work2.jpg" id="image2" alt="journey app">-->
         </div>
       </section>
 
