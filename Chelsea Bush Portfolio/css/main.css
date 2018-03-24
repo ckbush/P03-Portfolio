@@ -417,6 +417,10 @@ header {
 	height: 100vh;
 }
 
+span{
+	color:#ff4633;
+}
+
 .intro-name h2{
 	height: auto;
 	width: 700px;
@@ -432,7 +436,7 @@ header {
 	color: #f7c800;
 	color: #ff4633;
 	color: black;
-	opacity: 0.9;
+	opacity: 0.85;
 	text-transform: lowercase;
 
 
@@ -870,7 +874,7 @@ footer {
 }
 
 .view-more-section h2:hover, .view-more-section h2:focus, .view-more-section h2:active {
-	opacity: 0.35;
+	opacity: 0.4;
 	color: #ff4633;
 	text-decoration: none;
 }
