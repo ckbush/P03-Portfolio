@@ -111,9 +111,29 @@ padding-right: 3em;
 }
 
 #about-img{
-	width: 27.69vw;
-	height: 30vw;
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding-top: 3em;
+	padding-left: 4em;
+	padding-right: 4em;
 }
+
+.about-title h2{
+	font-size: 1.6em;
+}
+
+.about-me-section{
+	position: relative;
+	margin-bottom: 10em;
+	margin-top: 3em;
+}
+
+.about-paragraph{
+	margin-left: 4em;
+	margin-right: 4em;
+}
+
 
 .project-section{
 	padding-left: 4em;
@@ -181,9 +201,30 @@ padding-right: 3em;
 	}
 
 	#about-img{
-		width: 27.69vw;
-		height: 30vw;
+		width: 100%;
+		height: auto;
+		position: relative;
+		left: 100%;
+		padding-top: 3em;
+		padding-left: 0em;
+		padding-right: 0em;
 	}
+
+	.about-title h2{
+		font-size: 1.6em;
+	}
+
+	.about-me-section{
+		position: relative;
+		margin-bottom: 10em;
+		margin-top: 3em;
+	}
+
+	.about-paragraph{
+		margin-left: 9em;
+		margin-right: 9em;
+	}
+
 
 	.project-section{
 		padding-left: 7em;
@@ -297,8 +338,32 @@ padding-right: 3em;
 	}
 
 	#about-img{
-		width: 27.69vw;
+		float: right;
+		width: 30.77vw;
 		height: 30vw;
+		margin-right: 0em;
+		margin-left: 0em;
+		left: 0;
+		padding-top: 0em;
+	}
+
+	.about-title h2{
+		font-size: 1.6em;
+	}
+
+	.about-me-section{
+		position: relative;
+		margin-bottom: 10em;
+		margin-top: 9.5em;
+	}
+
+	.about-paragraph{
+		margin-left: 10em;
+		margin-right: 0em;
+		right: 40%;
+		padding-top: 5em;
+		position:absolute;
+		bottom:0;
 	}
 
 
@@ -365,6 +430,10 @@ padding-right: 10em;
 	width: 30.77vw;
 	height: 30vw;
 	margin-right: 0em;
+}
+
+.about-title h2{
+	font-size: 2.2em;
 }
 
 .about-me-section{
