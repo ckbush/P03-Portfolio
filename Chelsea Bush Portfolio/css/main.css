@@ -136,6 +136,7 @@ video{
 	text-decoration: none;
 	font-size: 0.9em;
 	opacity: 0.8;
+	letter-spacing: 0.05em;
 }
 
 .styleguide-side-nav a:hover, .styleguide-side-nav a:focus, .styleguide-side-nav a:active {
@@ -172,6 +173,7 @@ video{
 	text-decoration: none;
 	font-size: 0.95em;
 	opacity: 0.8;
+	letter-spacing: 0.1em;
 }
 
 .styleguide-main-nav a:hover {
@@ -327,6 +329,7 @@ header {
 	text-decoration: none;
 	font-size: 0.9em;
 	opacity: 0.7;
+	letter-spacing: 0.1em;
 }
 
 .main-nav a:hover {
@@ -617,23 +620,27 @@ span{
 	line-height: 1.65;
 }
 
-#video-link h3{
+#video-link, #prototype-link{
 	font-weight: 300;
+	font-family: 'Inconsolata', serif;
 	opacity: 0.9;
-	text-decoration: none;
 	color: black;
-	font-size: 0.8em;
-	letter-spacing: 0.3em;
+	font-size: 0.9em;
+	letter-spacing: 0.1em;
+	float: left;
+	display: block;
+	border-bottom: 0.5px solid black;
+	line-height: 2em;
 }
 
-#video-link h3:hover {
+#video-link:hover, #prototype-link:hover {
 	opacity: 0.5;
-	text-decoration: none;
+	color: #ff4633;
 }
 
 .bottom-link {
-	padding: 3em;
-	text-align: center;
+	display: block;
+	padding-bottom: 10em;
 }
 
 #content-section {
@@ -696,12 +703,6 @@ span{
 	text-align: center;
 }
 
-.content-headings h3{
-}
-
-.content-headings p {
-}
-
 .content-img{
 padding-top: 2em;
 padding-bottom: 2em;
@@ -726,6 +727,8 @@ position: relative;
 .prototype-img video{
 	width: 100%;
 	height: 100%;
+	padding-top: 3em;
+	padding-bottom: 3em;
 }
 
 .promo-video video{
@@ -863,7 +866,7 @@ color: #ff4633;
 .view-more-section h2{
 	text-align: center;
 	opacity: 0.1;
-	font-size: 1.9em;
+	font-size: 1.5em;
 	font-family: 'Lora', 'Inconsolata';
 	text-transform: lowercase;
 	color: black;

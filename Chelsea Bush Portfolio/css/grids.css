@@ -18,6 +18,10 @@
 	padding: 0.5em;
 }
 
+.project-section .grid-col-1of2, .project-section .grid-col-1of3, ..project-section .grid-col-2of3{
+	padding: 0.5em;
+}
+
 .grid-col-1of1 {
 	width: 100%;
 }
@@ -368,8 +372,8 @@ padding-right: 3em;
 
 
 	.project-section{
-		padding-left: 10em;
-		padding-right: 10em;
+		padding-left: 12em;
+		padding-right: 12em;
 	}
 
 	.intro-name h2{
@@ -458,8 +462,8 @@ padding-right: 10em;
 
 }
 .project-section{
-	padding-left: 14em;
-	padding-right: 14em;
+	padding-left: 18em;
+	padding-right: 18em;
 }
 
 .intro-name h2{
