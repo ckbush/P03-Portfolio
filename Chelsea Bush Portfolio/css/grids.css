@@ -145,7 +145,25 @@ padding-right: 3em;
 }
 
 .intro-name h2{
-	font-size: 2em;
+	font-size: 1.8em;
+	}
+
+	.main-nav {
+		right: 2em;
+	}
+
+	.logo {
+		left: 42em;
+	}
+
+
+
+@media (min-width: 30em){
+
+	.intro-name h2{
+		font-size: 2.1em;
+		}
+
 }
 
 

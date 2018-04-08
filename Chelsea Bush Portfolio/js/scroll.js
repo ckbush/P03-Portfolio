@@ -18,5 +18,3 @@ $(document).scroll(function() {
   //  $(".intro-section").css("opacity", 3 - $(window).scrollTop() / 80);
   //}
  //});
-
- 
