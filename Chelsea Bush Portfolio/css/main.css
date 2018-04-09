@@ -236,15 +236,6 @@ header {
   height: 50px;
   width: 100%; }
 
-.header {
-  width: 100%;
-  height: 55px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  opacity: 0.8; }
-
 .logo {
   position: fixed;
   padding-top: 1em;
@@ -423,6 +414,42 @@ span {
   to {
     width: 110%; } }
 
+.intro-name h2, .bottom-info p {
+  animation: fadein 5s;
+  -moz-animation: fadein 5s;
+  /* Firefox */
+  -webkit-animation: fadein 5s;
+  /* Safari and Chrome */
+  -o-animation: fadein 5s;
+  /* Opera */ }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 /*Work*/
 .work-image-container {
   overflow: hidden;
@@ -504,26 +531,14 @@ span {
 #about-section {
   padding-top: 0; }
 
-.about-section {
-  padding-left: 15em;
-  padding-right: 15em;
-  padding-top: 0; }
+.about-paragraph a {
+  color: black;
+  font-weight: bold; }
 
-.about-image-container {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 3em;
-  margin-bottom: 6em; }
-
-.about-image-container img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  display: inline-block; }
+.about-paragraph a:hover {
+  color: #ff4633;
+  font-weight: bold;
+  opacity: 0.7; }
 
 .about-title h2 {
   font-family: 'lora';
@@ -717,8 +732,8 @@ footer {
   left: 0;
   text-align: center;
   padding-bottom: 2em;
-  padding-left: 4em;
-  padding-right: 4em;
+  padding-left: 1em;
+  padding-right: 1em;
   padding-top: 1.5em; }
 
 .contact-info p {

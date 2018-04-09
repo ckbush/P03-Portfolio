@@ -119,8 +119,8 @@ padding-right: 3em;
 	height: auto;
 	position: relative;
 	padding-top: 3em;
-	padding-left: 4em;
-	padding-right: 4em;
+	padding-left: 3em;
+	padding-right: 3em;
 }
 
 .about-title h2{
@@ -134,8 +134,8 @@ padding-right: 3em;
 }
 
 .about-paragraph{
-	margin-left: 4em;
-	margin-right: 4em;
+	margin-left: 3em;
+	margin-right: 3em;
 }
 
 
@@ -153,7 +153,7 @@ padding-right: 3em;
 	}
 
 	.logo {
-		left: 42em;
+		left: 2em;
 	}
 
 
@@ -162,6 +162,33 @@ padding-right: 3em;
 
 	.intro-name h2{
 		font-size: 2.1em;
+		}
+
+		#about-img{
+			width: 52vw;
+			height: 50.7vw;
+			position: relative;
+			transform: translate(-50%);
+			left: 50vw;
+			margin-top: 4em;
+			padding-top: 0em;
+			padding-left: 0em;
+			padding-right: 0em;
+		}
+
+		.about-title h2{
+			font-size: 1.6em;
+		}
+
+		.about-me-section{
+			position: relative;
+			margin-bottom: 10em;
+			margin-top: 3em;
+		}
+
+		.about-paragraph{
+			margin-left: 6em;
+			margin-right: 6em;
 		}
 
 }
@@ -223,11 +250,13 @@ padding-right: 3em;
 	}
 
 	#about-img{
-		width: 100%;
-		height: auto;
+		width: 40vw;
+		height: 39vw;
 		position: relative;
-		left: 100%;
-		padding-top: 3em;
+		transform: translate(-50%);
+		left: 50vw;
+		margin-top: 4em;
+		padding-top: 0em;
 		padding-left: 0em;
 		padding-right: 0em;
 	}
@@ -366,7 +395,9 @@ padding-right: 3em;
 		margin-right: 0em;
 		margin-left: 0em;
 		left: 0;
-		padding-top: 0em;
+		transform: translate(0%);
+		padding-top:0em;
+		margin-top: 2em;
 	}
 
 	.about-title h2{
@@ -398,6 +429,19 @@ padding-right: 3em;
 		font-size: 2.7em;
 	}
 
+}
+
+@media (min-width: 60em){
+
+	.about-title h2{
+		font-size: 2.2em;
+	}
+
+.about-me-section{
+	position: relative;
+	margin-bottom: 10em;
+	margin-top: 5em;
+	}
 }
 
 
@@ -461,7 +505,7 @@ padding-right: 10em;
 .about-me-section{
 	position: relative;
 	margin-bottom: 10em;
-	margin-top: 5em;
+	margin-top: 3.5em;
 }
 
 .about-paragraph{
