@@ -465,6 +465,8 @@ header {
     -webkit-animation: fadein 5s; /* Safari and Chrome */
     -o-animation: fadein 5s; /* Opera */
 }
+
+
 @keyframes fadein {
     from {
         opacity:0;
@@ -661,8 +663,6 @@ header {
 	float: left;
 	display: block;
   text-decoration: underline;
-	/*border-bottom: 0.5px solid black;
-	line-height: 2em;*/
 }
 
 #video-link:hover, #prototype-link:hover {
@@ -673,6 +673,11 @@ header {
 .bottom-link {
 	display: block;
 	padding-bottom: 10em;
+}
+
+.bottom-link2 {
+	display: block;
+	padding-bottom: 2em;
 }
 
 #content-section {
@@ -737,8 +742,8 @@ padding-bottom: 2em;
 }
 
 .large-img{
-padding-top: 1em;
-padding-bottom: 0em;
+padding-top: 3em;
+padding-bottom: 2em;
 position: relative;
 }
 
@@ -830,7 +835,7 @@ position: relative;
 
 
 
-#contact{
+#footer{
 	padding-top: 2em;
 }
 
@@ -858,7 +863,7 @@ footer {
 	padding-top: 1.5em;
 }
 
-.contact-info p{
+.footer-info p{
 	font-weight: 500;
 	font-style: italic;
 }

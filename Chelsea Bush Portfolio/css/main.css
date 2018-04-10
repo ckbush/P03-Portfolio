@@ -565,9 +565,7 @@ header {
   letter-spacing: 0.05em;
   float: left;
   display: block;
-  text-decoration: underline;
-  /*border-bottom: 0.5px solid black;
-	line-height: 2em;*/ }
+  text-decoration: underline; }
 
 #video-link:hover, #prototype-link:hover {
   opacity: 0.8;
@@ -576,6 +574,10 @@ header {
 .bottom-link {
   display: block;
   padding-bottom: 10em; }
+
+.bottom-link2 {
+  display: block;
+  padding-bottom: 2em; }
 
 #content-section {
   padding-top: 2.5em; }
@@ -626,8 +628,8 @@ header {
   padding-bottom: 2em; }
 
 .large-img {
-  padding-top: 1em;
-  padding-bottom: 0em;
+  padding-top: 3em;
+  padding-bottom: 2em;
   position: relative; }
 
 .content-image-container {
@@ -701,7 +703,7 @@ header {
   margin-bottom: 2em; }
 
 /*Footer*/
-#contact {
+#footer {
   padding-top: 2em; }
 
 footer {
@@ -724,7 +726,7 @@ footer {
   padding-right: 1em;
   padding-top: 1.5em; }
 
-.contact-info p {
+.footer-info p {
   font-weight: 500;
   font-style: italic; }
 
