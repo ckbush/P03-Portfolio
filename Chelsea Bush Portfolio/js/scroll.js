@@ -15,6 +15,6 @@ $(document).scroll(function() {
 
 //$(window).scroll(function(){
   //if ($(window).width() > 60) {
-  //  $(".intro-section").css("opacity", 3 - $(window).scrollTop() / 80);
+  //  $(".project-section").css("opacity", 3 - $(window).scrollTop() / 80);
   //}
  //});

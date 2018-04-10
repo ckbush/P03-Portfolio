@@ -18,9 +18,9 @@ figure {
 
 h1 {
   font-family: 'Lora', monospace;
-  font-size: 1.8em;
+  font-size: 2.5em;
   font-weight: 700;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.35em;
   text-transform: lowercase; }
 
 h2 {
@@ -58,8 +58,10 @@ li {
 
 section code {
   display: block;
-  background-color: #EEE;
-  padding: 0.5em 0.75em; }
+  border: 1px solid #d1d1d1;
+  background-color: #fcfcfc;
+  padding: 0.5em 0.75em;
+  font-size: 0.9em; }
 
 section {
   padding-bottom: 2em; }
@@ -71,8 +73,11 @@ section {
   padding-top: 1em; }
 
 /*Styleguide*/
-#styleguide-title {
-  width: 120px; }
+.styleguide-title h2 {
+  letter-spacing: 0.35em;
+  font-size: 2.5em;
+  opacity: 0.9;
+  padding-bottom: 1em; }
 
 #interactive-elements {
   position: relative;
@@ -80,16 +85,38 @@ section {
   padding-left: 2em;
   padding-right: 2em; }
 
-#nav, #links, #headings, #paragraphs, #lists, #colours, #images, #grids {
-  padding-top: 2em;
-  padding-bottom: 1em; }
+#links, #headings, #paragraphs, #lists, #images {
+  padding-top: 3em;
+  padding-bottom: 3em; }
 
-.grid-structure {
-  background-color: #DDDDDD;
+#nav {
+  padding-top: 0em;
+  padding-bottom: 2.5em; }
+
+#images {
+  padding-top: 3em;
+  padding-bottom: 4em; }
+
+#colours {
+  padding-top: 2em;
+  padding-bottom: 4em; }
+
+#grids {
+  padding-top: 3em;
+  padding-bottom: 8em; }
+
+.grid-structure, .grid-structure1 {
+  border: 1px solid #d1d1d1;
+  background-color: #f7f7f7;
   text-align: center;
   padding: 0.5em;
   margin-bottom: 0.5em;
   margin-top: 0.5em; }
+
+.grid-structure1 {
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em; }
 
 .title {
   padding-top: 2em; }
@@ -118,7 +145,7 @@ section {
 
 .styleguide-side-nav a:hover, .styleguide-side-nav a:focus, .styleguide-side-nav a:active {
   text-decoration: none;
-  opacity: 0.6;
+  opacity: 0.8;
   color: #ff4633; }
 
 .styleguide-side-nav li {
@@ -128,7 +155,7 @@ section {
   position: relative;
   left: 0;
   top: 0;
-  z-index: 16;
+  z-index: 13;
   color: black;
   text-decoration: none; }
 
@@ -149,7 +176,7 @@ section {
 
 .styleguide-main-nav a:hover {
   text-decoration: none;
-  opacity: 0.6;
+  opacity: 0.8;
   color: #ff4633; }
 
 .in-text-link {
@@ -175,46 +202,42 @@ section {
   background-color: white;
   border: 1px solid black; }
 
-.submit-button:hover {
-  display: inline-block;
-  margin: 1em 0;
-  padding: 0.8em 2em;
-  color: white;
-  background-color: black;
-  border: 1px solid black; }
-
 .colour-palette1 {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 140px;
   background-color: #000000;
   color: white;
   text-align: center;
-  display: inline-block; }
+  display: inline-block;
+  padding-left: 1.5em; }
 
 .colour-palette2 {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 140px;
   background-color: #FFFFFF;
   border: 1px solid grey;
   color: black;
   text-align: center;
-  display: inline-block; }
+  display: inline-block;
+  padding-left: 2em; }
 
 .colour-palette3 {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 140px;
   background-color: #d6d6d6;
   color: black;
   text-align: center;
-  display: inline-block; }
+  display: inline-block;
+  padding-left: 1.5em; }
 
 .colour-palette4 {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 140px;
   background-color: #ff4633;
   color: black;
   text-align: center;
-  display: inline-block; }
+  display: inline-block;
+  padding-left: 2em; }
 
 .styleguide-image-container {
   overflow: hidden;
@@ -235,6 +258,13 @@ header {
   position: relative;
   height: 50px;
   width: 100%; }
+
+.header {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  z-index: 14; }
 
 .logo {
   position: fixed;
@@ -273,7 +303,7 @@ header {
 .main-nav a:hover {
   text-decoration: none;
   color: #ff4633;
-  opacity: 0.6; }
+  opacity: 0.8; }
 
 #intro {
   position: relative;
@@ -310,28 +340,6 @@ header {
   margin-bottom: 9em;
   position: absolute; }
 
-.box-container {
-  position: fixed;
-  height: 250px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  top: 44vh;
-  left: 50vw; }
-
-/*.middle-line{
-	position: absolute;
-	top: 37vh;
-	padding-top: 165px;
-	text-align: center;
-	height: auto;
-	border-bottom: 1px solid black;
-	width: 70px;
-	transform: translate(-50%, -50%);
-	left: 50vw;
-	overflow: hidden;
-	object-fit: cover;
-}*/
 .bottom-info {
   position: absolute;
   top: 39vh;
@@ -363,15 +371,13 @@ header {
 
 .intro-section {
   position: relative;
-  width: 400px;
+  width: 100vw;
   height: 100vh; }
 
-span {
-  color: #ff4633; }
-
 .intro-name h2 {
+  display: block;
+  white-space: nowrap;
   height: auto;
-  width: 700px;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -384,43 +390,19 @@ span {
   opacity: 1;
   text-align: center;
   letter-spacing: 0.35em;
-  /*color: #f7c800;
-	color: #ff4633;*/
   color: black;
   opacity: 0.9;
   text-transform: lowercase;
   font-family: 'Lora', serif;
-  /*
-	overflow: hidden; /* Ensures the content is not revealed until the animation */
-  /*white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  /*letter-spacing: .35em; /* Adjust as needed */
-  /*animation:
-    typing 2.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+  margin: 0 auto; }
 
-		*/ }
-
-/* The typing effect */
-@-webkit-keyframes typing {
-  from {
-    width: 0; }
-  to {
-    width: 110%; } }
-@keyframes typing {
-  from {
-    width: 0; }
-  to {
-    width: 110%; } }
-
-.intro-name h2, .bottom-info p {
-  animation: fadein 5s;
-  -moz-animation: fadein 5s;
+.intro-name h2, .bottom-info p, .styleguide-title h2 {
+  animation: fadein 3s;
+  -moz-animation: fadein 3s;
   /* Firefox */
-  -webkit-animation: fadein 5s;
+  -webkit-animation: fadein 3s;
   /* Safari and Chrome */
-  -o-animation: fadein 5s;
+  -o-animation: fadein 3s;
   /* Opera */ }
 
 @keyframes fadein {
@@ -462,6 +444,11 @@ span {
 .work-1 {
   padding-top: 2em;
   padding-bottom: 13em;
+  width: 100%; }
+
+.styleguide-work-1 {
+  padding-top: 6em;
+  padding-bottom: 0em;
   width: 100%; }
 
 .work-2 {
@@ -538,7 +525,7 @@ span {
 .about-paragraph a:hover {
   color: #ff4633;
   font-weight: bold;
-  opacity: 0.7; }
+  opacity: 1; }
 
 .about-title h2 {
   font-family: 'lora';
@@ -570,15 +557,17 @@ span {
   font-family: 'Inconsolata', serif;
   opacity: 0.9;
   color: black;
+  font-weight: medium;
   font-size: 0.9em;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   float: left;
   display: block;
-  border-bottom: 0.5px solid black;
-  line-height: 2em; }
+  text-decoration: underline;
+  /*border-bottom: 0.5px solid black;
+	line-height: 2em;*/ }
 
 #video-link:hover, #prototype-link:hover {
-  opacity: 0.5;
+  opacity: 0.8;
   color: #ff4633; }
 
 .bottom-link {
@@ -612,9 +601,6 @@ span {
   -o-object-fit: cover;
   object-fit: cover;
   display: inline-block; }
-
-.header-vid {
-  padding-bottom: 3em; }
 
 .project-title h2 {
   font-family: 'lora';
@@ -755,7 +741,7 @@ footer {
 
 #project-link1:hover, #project-link2:hover, #project-link3:hover {
   color: #ff4633;
-  opacity: 0.5; }
+  opacity: 0.8; }
 
 /*view more*/
 #view-more-home {
@@ -775,3 +761,28 @@ footer {
   opacity: 0.2;
   color: #ff4633;
   text-decoration: none; }
+
+/*citations*/
+.citations-section {
+  padding-top: 0em;
+  padding-bottom: 0em;
+  height: 100vh;
+  width: 100%; }
+
+.citations-content {
+  position: absolute;
+  top: 50vh;
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50vw;
+  overflow: hidden;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%; }
+
+.citations-content p, .citations-content h2 {
+  line-height: 2em; }

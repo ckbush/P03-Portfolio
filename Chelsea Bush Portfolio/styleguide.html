@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang=en>
 <head>
-  <title>Chelsea Bush Styleguide</title>
+  <title>Chelsea Bush Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,45 +16,32 @@
 
 <body>
 
-  <div class="grid-row">
-    <div class="grid-col-1of4">
-      <nav class="styleguide-side-nav">
-        <ul>
-          <li><a href="#nav">Navigation</a></li>
-          <li><a href="#links">Links</a></li>
-          <li><a href="#headings">Headings</a></li>
-          <li><a href="#paragraphs">Paragraphs</a></li>
-          <li><a href="#lists">Lists</a></li>
-          <li><a href="#colours">Colours</a></li>
-          <li><a href="#images">Images</a></li>
-          <li><a href="#grids">Grids</a></li>
-        </ul>
 
-      </nav>
-    </div>
 
-    <div class="grid-col-3of4">
+    <div class="project-section">
 
       <section id="intro">
 
         <header>
     			<div class="header">
-    			</div>
-    			<a href="index.html#intro"  class="logo"><img src="img/logo-01.png" alt="name logo"></a>
+    			<a href="index.html#intro" class="logo"><img src="img/logo-01.png" alt="name logo"></a>
     			<nav class="main-nav">
     				<ul>
     					<li><a href="index.html#work">work</a></li>
     					<li><a href="about.html">about</a></li>
     				</ul>
     			</nav>
-
+          </div>
     		</header>
-
       </section>
 
 
       <!-- nav button -->
       <section id="nav">
+
+        <!--<div class="styleguide-title">
+        <h2>Styleguide.</h2>
+      </div>-->
 
 
         <h2>Navigation</h2>
@@ -65,6 +52,8 @@
         <h3>Sample code:</h3>
 
         <code>
+          &lt;nav&gt;
+            <br>
           &lt;ul&gt;
           <br>
           &lt;li&gt;&lt;a href="#" class="main-nav"&gt;work&lt;/a&gt;&lt;/li&gt;
@@ -72,6 +61,8 @@
           &lt;li&gt;&lt;a href="#" class="main-nav"&gt;about&lt;/a&gt;&lt;/li&gt;
           <br>
           &lt;/ul&gt;
+            <br>
+          &lt;/nav&gt;
         </code>
 
         <h3>Rendered elements:</h3>
@@ -123,10 +114,10 @@
         <h2>Paragraphs</h2>
 
         <h3>Sample code:</h3>
-        <code>&lt;p&gt;I’m Chelsea, a visual designer based in Vancouver, BC. Currently, I’m a third year design student in the School of Interactive Arts and Technology at Simon Fraser University.&lt;/p&gt;</code>
+        <code>&lt;p&gt;I’m Chelsea, a visual and user experience designer based in Vancouver, BC. Currently, I’m a third year design student in the School of Interactive Arts and Technology at Simon Fraser University.&lt;/p&gt;</code>
 
         <h3>Rendered element:</h3>
-        <p class="paragraph-text">I’m Chelsea, a visual designer based in Vancouver, BC. Currently, I’m a third year design student in the School of Interactive Arts and Technology at Simon Fraser University.</p>
+        <p class="paragraph-text">I’m Chelsea, a visual and user experience designer based in Vancouver, BC. Currently, I’m a third year design student in the School of Interactive Arts and Technology at Simon Fraser University.</p>
 
       </section>
 
@@ -161,87 +152,129 @@
       </section>
 
 
+      <section id="images">
+
+        <h2>Sample Project Listing</h2>
+
+        <div class="styleguide-work-1">
+          <a href="conscious-culture.html">
+            <div class="work-image-container" id="work1">
+              <img src="img/cc-work.jpg" alt="multiple devices colour">
+              <img src="img/cc-work2.jpg" id="under-image1" alt="multiple devices black">
+            </div>
+          </a>
+          <div class="work-title">
+            <a href="conscious-culture.html">Conscious Culture</a>
+            <p>Website Design and Development</p>
+          </div>
+        </div>
+      </section>
 
       <section id="colours">
 
         <h2>Colour Palette</h2>
+
+        <div class="colours">
+
+        <div class="grid-row">
+          <div class="grid-col-1of4">
         <div class="colour-palette2">
         <h3>#FFFFFF</h3>
         </div>
+        </div>
+        <div class="grid-col-1of4">
         <div class="colour-palette3">
         <h3>#d6d6d6</h3>
         </div>
+        </div>
+        <div class="grid-col-1of4">
         <div class="colour-palette1">
         <h3>#000000</h3>
         </div>
+        </div>
+        <div class="grid-col-1of4">
         <div class="colour-palette4">
         <h3>#FF4633</h3>
         </div>
-
-      </section>
-
-      <section id="images">
-
-        <h2>Sample Image Treatment</h2>
-
-        <div class="styleguide-image-container">
-          <img src="img/journey-work.jpg" alt="journey app">
-          <!--<img src="img/journey-work2.jpg" id="image2" alt="journey app">-->
         </div>
-      </section>
-
-      <section id="grids">
-        <h2>Grids</h2>
-
-        <div class="sample-grids">
-          <div class="grid-row">
-            <div class="grid-col-1of1">
-              <p class="grid-structure">1 of 1</p>
-            </div>
-          </div>
-
-          <div class="grid-row">
-            <div class="grid-col-1of2">
-              <p class="grid-structure">1 of 2</p>
-            </div>
-            <div class="grid-col-1of2">
-              <p class="grid-structure">2 of 2</p>
-            </div>
-          </div>
-
-          <div class="grid-row">
-            <div class="grid-col-1of3">
-              <p class="grid-structure">1 of 3</p>
-            </div>
-            <div class="grid-col-1of3">
-              <p class="grid-structure">2 of 3</p>
-            </div>
-            <div class="grid-col-1of3">
-              <p class="grid-structure">3 of 3</p>
-            </div>
-          </div>
-
-          <div class="grid-row">
-            <div class="grid-col-1of4">
-              <p class="grid-structure">1 of 4</p>
-            </div>
-            <div class="grid-col-1of4">
-              <p class="grid-structure">2 of 4</p>
-            </div>
-            <div class="grid-col-1of4">
-              <p class="grid-structure">3 of 4</p>
-            </div>
-            <div class="grid-col-1of4">
-              <p class="grid-structure">4 of 4</p>
-            </div>
-          </div>
         </div>
+      </div>
+
 
       </section>
 
 
-    </div>
+            <section id="grids">
+              <h2>Grid Structure</h2>
 
+              <div class="sample-grids">
+                <div class="grid-row">
+                  <div class="grid-col-1of1">
+                    <p class="grid-structure1">1 of 1</p>
+                  </div>
+                </div>
+
+                <div class="grid-row">
+                  <div class="grid-col-1of2">
+                    <p class="grid-structure">1 of 2</p>
+                  </div>
+                  <div class="grid-col-1of2">
+                    <p class="grid-structure">2 of 2</p>
+                  </div>
+                </div>
+
+                <div class="grid-row">
+                  <div class="grid-col-1of3">
+                    <p class="grid-structure">1 of 3</p>
+                  </div>
+                  <div class="grid-col-1of3">
+                    <p class="grid-structure">2 of 3</p>
+                  </div>
+                  <div class="grid-col-1of3">
+                    <p class="grid-structure">3 of 3</p>
+                  </div>
+                </div>
+
+                <div class="grid-row">
+                  <div class="grid-col-1of4">
+                    <p class="grid-structure">1 of 4</p>
+                  </div>
+                  <div class="grid-col-1of4">
+                    <p class="grid-structure">2 of 4</p>
+                  </div>
+                  <div class="grid-col-1of4">
+                    <p class="grid-structure">3 of 4</p>
+                  </div>
+                  <div class="grid-col-1of4">
+                    <p class="grid-structure">4 of 4</p>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+
+
+
+
+
+
+    <div id="contact">
+  		<footer>
+  			<div class="global-footer">
+  				<div class="contact-info">
+  					<p>designed and coded by chelsea bush, 2018</p>
+  				</div>
+  				<div class="project-info">
+  					<a href="styleguide.html" id="project-link1" class="in-text-link">styleguide</a>
+  					<a href="citations.html" id="project-link2" class="in-text-link">citations</a>
+  					<a href="citations.html" id="project-link3" class="in-text-link">git</a>
+  				</div>
+  			</div>
+  		</footer>
+  	</div>
+      </div>
+  	<script src="js/jquery.js"></script>
+  	<script src="js/scroll.js"></script>
   </body>
 
   </html>
