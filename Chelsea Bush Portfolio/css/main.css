@@ -396,13 +396,13 @@ header {
   font-family: 'Lora', serif;
   margin: 0 auto; }
 
-.intro-name h2, .bottom-info p, .styleguide-title h2 {
-  animation: fadein 3s;
-  -moz-animation: fadein 3s;
+.intro-name h2, .bottom-info p {
+  animation: fadein 5s;
+  -moz-animation: fadein 5s;
   /* Firefox */
-  -webkit-animation: fadein 3s;
+  -webkit-animation: fadein 5s;
   /* Safari and Chrome */
-  -o-animation: fadein 3s;
+  -o-animation: fadein 5s;
   /* Opera */ }
 
 @keyframes fadein {
