@@ -157,7 +157,9 @@ padding-right: 3em;
 	}
 
 	.header{
-		background-color: white;
+		background:url('../img/dot.png');
+	  background-repeat:repeat;
+	  background-attachment:fixed;
 	}
 
 .colours .grid-col-1of4{

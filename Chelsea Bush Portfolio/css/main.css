@@ -3,7 +3,10 @@ body {
   font-family: 'Inconsolata', monospace;
   font-size: 1em;
   letter-spacing: 0.02em;
-  background-color: #fff; }
+  background-color: #fff;
+  background: url("../img/dot.png");
+  background-repeat: repeat;
+  background-attachment: fixed; }
 
 html {
   max-width: 100%;
@@ -710,8 +713,7 @@ footer {
   margin-top: 1em; }
 
 .global-footer {
-  border: none;
-  border-top: 1.3px solid #d1d1d1;
+  border-top: 1.3px solid #e8e8e8;
   color: black;
   position: relative;
   width: 100%;

@@ -7,6 +7,9 @@ body{
 	font-size: 1em;
 	letter-spacing: 0.02em;
 	background-color: $background;
+  background:url('../img/dot.png');
+  background-repeat:repeat;
+  background-attachment:fixed;
 }
 
 html {
@@ -843,8 +846,7 @@ footer {
 
 
 .global-footer {
-	border: none;
-	border-top: 1.3px solid #d1d1d1;
+	border-top: 1.3px solid #e8e8e8;
 	color: black;
 	position: relative;
 	width: 100%;
