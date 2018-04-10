@@ -1,12 +1,13 @@
 /*General*/
 
-$background : #fff;
+$medium-grey: #d1d1d1;
+$pink-hover: #ff4633;
 
 body{
 	font-family: 'Inconsolata', monospace;
 	font-size: 1em;
 	letter-spacing: 0.02em;
-	background-color: $background;
+	background-color: #FFF;
   background:url('../img/dot.png');
   background-repeat:repeat;
   background-attachment:fixed;
@@ -79,7 +80,7 @@ li {
 
 section code {
 	display: block;
-  border: 1px solid #d1d1d1;
+  border: 1px solid $medium-grey;
   background-color: #fcfcfc;
 	padding: 0.5em 0.75em;
   font-size: 0.9em;
@@ -141,7 +142,7 @@ padding-bottom: 4em;
 
 
 .grid-structure, .grid-structure1 {
-  border: 1px solid #d1d1d1;
+  border: 1px solid $medium-grey;
   background-color: #f7f7f7;
 	text-align: center;
 	padding: 0.5em;
@@ -185,7 +186,7 @@ padding-bottom: 4em;
 .styleguide-side-nav a:hover, .styleguide-side-nav a:focus, .styleguide-side-nav a:active {
 	text-decoration: none;
 	opacity: 0.8;
-	color: #ff4633;
+	color: $pink-hover;
 }
 
 .styleguide-side-nav li{
@@ -222,7 +223,7 @@ padding-bottom: 4em;
 .styleguide-main-nav a:hover {
 	text-decoration: none;;
 	opacity: 0.8;
-	color: #ff4633;
+	color: $pink-hover;
 }
 
 .in-text-link{
@@ -238,17 +239,8 @@ padding-bottom: 4em;
 
 .in-text-link:hover {
 	opacity: 0.3;
-	color: #ff4633;
+	color: $pink-hover;
 	text-decoration: none;
-}
-
-.submit-button {
-	display: inline-block;
-	margin: 1em 0;
-	padding: 0.8em 2em;
-	color: black;
-	background-color: white;
-	border: 1px solid black;
 }
 
 
@@ -286,7 +278,7 @@ padding-bottom: 4em;
 .colour-palette4{
 	width: 100%;
 	height: 140px;
-	background-color: #ff4633;
+	background-color: $pink-hover;
 	color: black;
 	text-align: center;
 	display: inline-block;
@@ -307,7 +299,6 @@ padding-bottom: 4em;
 	}
 
 /*Intro*/
-
 
 header a{
 	color: #000;
@@ -371,13 +362,12 @@ header {
 
 .main-nav a:hover {
 	text-decoration: none;
-	color: #ff4633;
+	color: $pink-hover;
 	opacity: 0.8;
 }
 
 #intro{
 	position: relative;
-	/*background-color: #f94e3d;*/
 }
 
 
@@ -608,7 +598,7 @@ header {
 }
 
 .about-paragraph a:hover{
-  color: #ff4633;
+  color: $pink-hover;
   font-weight: bold;
   opacity: 1;
 }
@@ -657,7 +647,7 @@ header {
 	font-family: 'Inconsolata', serif;
 	opacity: 0.9;
 	color: black;
-  font-weight: medium;
+  font-weight: bolder;
 	font-size: 0.9em;
 	letter-spacing: 0.05em;
 	float: left;
@@ -667,7 +657,7 @@ header {
 
 #video-link:hover, #prototype-link:hover {
 	opacity: 0.8;
-	color: #ff4633;
+	color: $pink-hover;
 }
 
 .bottom-link {
@@ -884,7 +874,7 @@ footer {
 }
 
 #project-link1:hover, #project-link2:hover, #project-link3:hover {
-color: #ff4633;
+color: $pink-hover;
 	opacity: 0.8;
 }
 
@@ -908,7 +898,7 @@ color: #ff4633;
 
 .view-more-section h2:hover, .view-more-section h2:focus, .view-more-section h2:active {
 	opacity: 0.2;
-	color: #ff4633;
+	color: $pink-hover;
 	text-decoration: none;
 }
 
